@@ -5,6 +5,6 @@ class  Electronics(models.Model):
     PName = models.CharField(max_length=100)
     Brand = models.CharField(max_length=100)
     Price = models.IntegerField()
-    
+    # magic method
     def __str__(self):
         return self.Brand
